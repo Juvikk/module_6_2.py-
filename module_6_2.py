@@ -1,6 +1,5 @@
 class Vehicle:
-    __COLOR_VARIANTS = ['black,purple,white,pink']
-
+    __COLOR_VARIANTS = ['purple', 'red', 'pink', 'black', 'white']
     def __init__(self, owner, model, engine_power, color):
         self.owner = owner
         self.__model = model
@@ -32,15 +31,15 @@ class Vehicle:
 class Sedan(Vehicle):
     __PASSENGERS_LIMIT = 4
 
-    def __init__(self, owner, model, color, engine_power):
-        super().__init__(owner, model, engine_power, color)
+
+def __init__(self, owner, model, color, engine_power):
+    super().__init__(owner, model, engine_power, color)
 
 
 vehicle = Sedan('dadya fyodor', 'zhigyli', 'purple', 3500)
 
 vehicle.print_info()
-
-vehicle.set_color ='white'
+vehicle.set_color('white')
 vehicle.engine_power = 1500
 vehicle.owner = 'dadya petya'
 vehicle.print_info()
